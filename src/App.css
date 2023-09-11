@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fbb034;
+}
+.App {
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+.span-two {
+  grid-column: span 2;
+}
+.screen {
+  grid-column: 1/-1;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  background-color: #4357692d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.screen .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+.screen .curent-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+button {
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: 1px solid #260adb;
+  background-color: #503cd1;
+  color: #ffff;
+}
+button:hover {
+  background-color: rgb(61, 43, 184);
+}
+.equal:hover {
+  background-color: rgb(228, 39, 15);
+}
